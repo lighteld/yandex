@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: localadmin
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC5UqkrWmBeaOfOLYjV3sn+AoXT0QD4JCVyWl6E0mTkpWB5jfCDuK7qjsjR+L2gLthjNtojWvK7wQjdeT+2KnnWTyGNNF1rodbvSyQYKlcWJxiNv/0kbmXspAej7FF6xyqlVUmuE0fDx2Bn7MvEwOb38qXP4B980ab0Hgp9QmYEbGI+oYFUsbwIIG5gyka3+fTTfuktQ8x0u3AwsJeo/ENrFrevRsteOj2zRgg8n75f5fzAk2ZP8rpnxHyEFYFaQCYPDQftF1ZOOw6iv6DYpkf4abktIclpQR3FBU7XLfYxkDVj74sUnRWUe73e6i85h/ZJxqKO1E1Noy2lD4pFsfe6DWjw7TBAAFeU4cnyUpZzYempgHEs8gSUBUqqtoGC8f0NG1QGQzZ8WiIIiURctXUvU80zH2YYsTD7fsim0OVfe6H99AKZ+tgGpzU/dlsrOLGrF7QJe6ECUNjfwI4/eRHNVEVJ7qcaLCE4jisuDj70N0aSF6WTdZ1y3rjYFa8qVlM= localadmin@localcomp
